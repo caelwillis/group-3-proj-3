@@ -1,6 +1,6 @@
 -- Database: nash_restaurants_db
 
--- DROP DATABASE IF EXISTS nash_restaurants_db;
+DROP DATABASE IF EXISTS nash_restaurants_db;
 
 CREATE DATABASE nash_restaurants_db
     WITH
@@ -15,8 +15,8 @@ CREATE DATABASE nash_restaurants_db
 
 -- Table schema
 
--- DROP TABLE IF EXISTS restaurant_info;
--- DROP TABLE IF EXISTS restaurant_categories; 
+DROP TABLE IF EXISTS restaurant_info;
+DROP TABLE IF EXISTS restaurant_categories; 
 
 CREATE TABLE restaurant_info (
 	name VARCHAR PRIMARY KEY NOT NULL,
