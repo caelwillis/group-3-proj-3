@@ -18,6 +18,13 @@ CREATE DATABASE nash_restaurants_db
 DROP TABLE IF EXISTS restaurant_info;
 DROP TABLE IF EXISTS restaurant_categories; 
 
+
+CREATE TABLE restaurant_categories (
+	name VARCHAR PRIMARY KEY NOT NULL,
+	category VARCHAR NOT NULL,
+	location VARCHAR NOT NULL
+	);
+	
 CREATE TABLE restaurant_info (
 	name VARCHAR PRIMARY KEY NOT NULL,
 	rating FLOAT NOT NULL,
@@ -25,7 +32,7 @@ CREATE TABLE restaurant_info (
 	number_of_reviews INT NOT NULL,
 	location VARCHAR NOT NULL
 	);
-
+	
 CREATE TABLE restaurant_categories (
 	name VARCHAR PRIMARY KEY NOT NULL,
 	category VARCHAR NOT NULL,
