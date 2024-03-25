@@ -100,6 +100,19 @@ At this point , we are exporting our cleaned data: both the restaurant_Category 
 
 ![export df](https://github.com/emely-zelaya/PICTURES_GROUP3_PROJECT3/blob/main/Project%203%20Fotos/export%20df.png?raw=true)
 
+
+After all of this work, we're now using PostgreSQL for our database creation. We start by ensuring that any previous database with the same name is dropped to avoid conflicts. Then, we create a new database with UTF-8 encoding and set the owner to 'postgres'. We also define the collation and ctype to 'C' for consistent sorting behavior regardless of the operating system's locale settings.
+
+Following that, we establish the table schema by dropping any existing tables to ensure a clean setup. We create two new tables: 'restaurant_info' and 'restaurant_categories'. The 'restaurant_info' table has fields for the name, rating, pricing, number of reviews, and location, with appropriate data types and constraints to ensure that no null values are entered. The name field is also set as the primary key to uniquely identify each entry. Similarly, the 'restaurant_categories' table is structured to include the name, category, and location, ensuring data integrity with NOT NULL constraints.
+
+Finally, we test our setup by selecting all entries from both tables to ensure that they have been created successfully and are ready for data insertion and further manipulation.
+
+![SQL](https://github.com/emely-zelaya/PICTURES_GROUP3_PROJECT3/blob/main/Project%203%20Fotos/SQL.png?raw=true)
+
+and lastly in this step we created our ERD wich is the following:
+
+![ERD](https://github.com/caelwillis/group-3-proj-3/blob/main/nash_restaurants_ERD.png?raw=true)
+
 In our project, we use Flask mostly to provide easy access to our cleaned data via routes that employ the JSONify method. This functionality is critical since it enables any user to readily access data in structured JSON format via a web request. By configuring these routes in Flask, we ensure that our cleaned data is available in a universally compatible format, making it usable in a broad range of data analysis and integration applications. This strategy demonstrates our dedication to data accessibility.
 
 ![Flask](https://github.com/emely-zelaya/PICTURES_GROUP3_PROJECT3/blob/main/Project%203%20Fotos/Flask.png?raw=true)
@@ -145,18 +158,5 @@ We are creating a scatter plot to explore the potential correlation between the 
 and this is the result for this code:
 
 ![last plot](https://github.com/emely-zelaya/PICTURES_GROUP3_PROJECT3/blob/main/Project%203%20Fotos/last%20plot.png?raw=true)
-
-
-After all of this work, we're now using PostgreSQL for our database creation. We start by ensuring that any previous database with the same name is dropped to avoid conflicts. Then, we create a new database with UTF-8 encoding and set the owner to 'postgres'. We also define the collation and ctype to 'C' for consistent sorting behavior regardless of the operating system's locale settings.
-
-Following that, we establish the table schema by dropping any existing tables to ensure a clean setup. We create two new tables: 'restaurant_info' and 'restaurant_categories'. The 'restaurant_info' table has fields for the name, rating, pricing, number of reviews, and location, with appropriate data types and constraints to ensure that no null values are entered. The name field is also set as the primary key to uniquely identify each entry. Similarly, the 'restaurant_categories' table is structured to include the name, category, and location, ensuring data integrity with NOT NULL constraints.
-
-Finally, we test our setup by selecting all entries from both tables to ensure that they have been created successfully and are ready for data insertion and further manipulation.
-
-![SQL](https://github.com/emely-zelaya/PICTURES_GROUP3_PROJECT3/blob/main/Project%203%20Fotos/SQL.png?raw=true)
-
-and lastly we created our ERD wich is the following:
-
-![ERD](https://github.com/emely-zelaya/PICTURES_GROUP3_PROJECT3/blob/main/Project%203%20Fotos/ERD.png?raw=true)
 
 Our powerpoint is the following. [Our Presentation](https://docs.google.com/presentation/d/1pXs8cVcfpdoFK2RFgf6HB-vpvv2FKx86kcPODn9mKQc/edit#slide=id.p1)
