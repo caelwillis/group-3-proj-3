@@ -100,6 +100,10 @@ At this point , we are exporting our cleaned data: both the restaurant_Category 
 
 ![export df](https://github.com/emely-zelaya/PICTURES_GROUP3_PROJECT3/blob/main/Project%203%20Fotos/export%20df.png?raw=true)
 
+In our project, we use Flask mostly to provide easy access to our cleaned data via routes that employ the JSONify method. This functionality is critical since it enables any user to readily access data in structured JSON format via a web request. By configuring these routes in Flask, we ensure that our cleaned data is available in a universally compatible format, making it usable in a broad range of data analysis and integration applications. This strategy demonstrates our dedication to data accessibility.
+
+![Flask](https://github.com/emely-zelaya/PICTURES_GROUP3_PROJECT3/blob/main/Project%203%20Fotos/Flask.png?raw=true)
+
 Now in this part of the code we are starting with the visualizations.
 
 In here we're creating a bar graph to show how many restaurants fall into each category, making it big and easy to read, coloring the bars sky blue, and labeling everything clearly before showing it on screen.
