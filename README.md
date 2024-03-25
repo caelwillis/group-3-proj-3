@@ -4,7 +4,7 @@
 This project streamlines the analysis of restaurants information by establishing a data pipeline from the Yelp API. Through an ETL process, we extract Yelp data, refine it, and populate a relational database, setting the stage for advanced restaurants analytics.
 
 ### How to Use
-FLASK RELATED
+To access webpage data in JSON format, start the "restaurant Flask API.py" file. This action generates a local server link. Be sure to append "/JSONify" to this link before navigating to it.
 
 ### Ethical Considerations
 - **Adherence to Data Usage Terms:**
